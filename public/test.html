@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Grid in da house</title>
+	</head>
+	<body>
+		<main>
+			<div class="default-grid">
+				<div class="local-video">
+					<video playsinline autoplay muted></video>
+				</div>
+				<!-- <video></video>
+				<video></video>
+				<video></video>
+				<video></video>
+				<video></video>
+				<video></video>
+				<video></video>
+				<video></video>
+				<video></video>
+				<video></video> -->
+			</div>
+
+			<div class="navbar-default">
+				<div class="inputs">
+					<label for="roomId">Room ID</label>
+					<input id="roomId" type="text" />
+					<button id="joinBtn">Join</button>
+					<button id="leaveBtn">Leave</button>
+					<button id="ShareBtn">ShareScreen</button>
+					<button id="ShareBtn">StopSharing</button>
+					<p id="notification"></p>
+					<h1></h1>
+				</div>
+				<div class="infos"></div>
+			</div>
+		</main>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+		<script src="js/RTCclass.js"></script>
+		<script src="js/main_copy.js"></script>
+	</body>
+</html>

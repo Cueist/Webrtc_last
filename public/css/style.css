@@ -1,0 +1,28 @@
+.default-grid {
+	/* position: absolute; */
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	box-shadow: -2px -2px 15px #888888;
+	border: red 2px solid;
+}
+
+.default-grid video {
+	border: black 1px solid;
+	/* position: relative; */
+	max-width: 250;
+	max-height: 250px;
+}
+
+.navbar-default {
+	position: absolute;
+	bottom: 3px;
+}
+.buttons {
+	position: relative;
+}
+
+/* .default-grid-screenShare{
+} */

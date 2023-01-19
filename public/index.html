@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WebRTC Video conference</title>
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+
+	<body>
+		<h1></h1>
+
+		<label for="roomId">Room ID</label>
+		<input id="roomId" type="text" />
+		<button id="joinBtn">Join</button>
+		<button id="leaveBtn">Leave</button>
+		<button id="ShareBtn">ShareScreen</button>
+		<button id="ShareBtn">StopSharing</button>
+
+		<p id="notification"></p>
+
+		<div id="videos">
+			<div id="videoGrid" class="grid-container"></div>
+		</div>
+		<div id="localVideo-container">
+			<video id="localCam" autoplay playsinline muted></video>
+			<video id="localScreen" autoplay playsinlne muted></video>
+		</div>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+		<script src="js/RTCclass.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
